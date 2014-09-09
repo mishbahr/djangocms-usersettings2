@@ -21,7 +21,7 @@ djangocms-usersettings2
   :target: https://coveralls.io/r/mishbahr/djangocms-usersettings2?branch=master
 
 
-This package integrates ``django-usersettings2`` with ``django-cms>=3.0``.
+This package integrates `django-usersettings2 <https://github.com/mishbahr/django-usersettings2>`_ with `django-cms>=3.0 <https://github.com/divio/django-cms/>`_.
 
 This allows a site editor to add/modify all ``usersettings`` in the frontend editing mode of django CMS
 and provide your users with a streamlined editing experience.
