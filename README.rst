@@ -21,15 +21,15 @@ djangocms-usersettings2
   :target: https://coveralls.io/r/mishbahr/djangocms-usersettings2?branch=master
 
 
-This package integrates django-usersettings2 with django-cms>=3.0.
+This package integrates ``django-usersettings2`` with ``django-cms>=3.0``.
 
 This allows a site editor to add/modify all ``usersettings`` in the frontend editing mode of django CMS
 and provide your users with a streamlined editing experience.
 
 This project requires django CMS 3.0 or higher to be properly installed and configured. When
-installing the``djangocms-usersettings2`` using pip, ``django-usersettings2`` will also be installed automatically.
+installing the ``djangocms-usersettings2`` using pip, ``django-usersettings2`` will also be installed automatically.
 
-The full documentation for ``django-usersettings2`` is at https://django-usersettings2.readthedocs.org.
+The full documentation for ``django-usersettings2`` is available at https://django-usersettings2.readthedocs.org.
 
 Quickstart
 ----------
