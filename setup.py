@@ -37,7 +37,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'django-cms>=3.0',
-        'django-usersettings',
+        'django-usersettings2',
     ],
     license="BSD",
     zip_safe=False,
