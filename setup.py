@@ -36,12 +36,14 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
+        'django-cms>=3.0',
+        'django-usersettings',
     ],
     license="BSD",
     zip_safe=False,
-    keywords='djangocms-usersettings2',
+    keywords='djangocms-usersettings2, site settings, django-cms',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 3 - Alpha',
         'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
@@ -51,5 +53,6 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
     ],
 )
