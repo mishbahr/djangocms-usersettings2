@@ -26,7 +26,7 @@ This package integrates `django-usersettings2 <https://github.com/mishbahr/djang
 This allows a site editor to add/modify all ``usersettings`` in the frontend editing mode of django CMS
 and provide your users with a streamlined editing experience.
 
-This project requires django CMS 3.0 or higher to be properly installed and configured. When
+This project requires django-usersettings2 and django CMS 3.0 or higher to be properly installed and configured. When
 installing the ``djangocms-usersettings2`` using pip, ``django-usersettings2`` will also be installed automatically.
 
 The full documentation for ``django-usersettings2`` is available at https://django-usersettings2.readthedocs.org.
