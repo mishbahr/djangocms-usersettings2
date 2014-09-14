@@ -1,6 +1,9 @@
 from django.core.urlresolvers import reverse, NoReverseMatch
-from django.contrib.admin.options import IS_POPUP_VAR
 
+try:
+    from django.contrib.admin.options import IS_POPUP_VAR
+except ImportError:
+    IS_POPUP_VAR = '_popup'
 
 from cms.toolbar_base import CMSToolbar
 from cms.toolbar_pool import toolbar_pool
