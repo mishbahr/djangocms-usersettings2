@@ -9,7 +9,6 @@ python:
 
 env:
   matrix:
-  - DJANGO='django>=1.4,<1.5'
   - DJANGO='django>=1.5,<1.6'
   - DJANGO='django>=1.6,<1.7'
 
@@ -23,11 +22,3 @@ script: coverage run --source djangocms_usersettings2 runtests.py
 
 # report coverage to coveralls.io
 after_success: coveralls
-
-
-matrix:
-  exclude:
-  - python: 3.3
-    env: DJANGO='django>=1.4,<1.5'
-  - python: 3.4
-    env: DJANGO='django>=1.4,<1.5'

@@ -11,16 +11,19 @@ Tests for `djangocms-usersettings2` toolbar module.
 from django.conf import settings
 from django.test import TestCase, RequestFactory
 from django.contrib.auth.models import User
-from django.contrib.admin.options import IS_POPUP_VAR
 from django.contrib.sites.models import Site
 from django.http import SimpleCookie
+from django.core.urlresolvers import reverse
 from django.utils.six import StringIO
+
+try:
+    from django.contrib.admin.options import IS_POPUP_VAR
+except ImportError:
+    IS_POPUP_VAR = '_popup'
 
 from cms.toolbar.items import ModalItem
 from cms.utils.compat.dj import force_unicode
 from cms.cms_toolbar import ADMIN_MENU_IDENTIFIER
-from django.core.urlresolvers import reverse
-
 from cms.models import Page
 from cms.utils.i18n import get_language_list
 
