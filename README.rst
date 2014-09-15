@@ -43,7 +43,7 @@ Quickstart
 
     INSTALLED_APPS = (
         ...
-        'django.contrib.sites'
+        'django.contrib.sites',
         'usersettings',
         'djangocms_usersettings2',
         ...
