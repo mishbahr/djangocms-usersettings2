@@ -2,8 +2,6 @@
 djangocms-usersettings2
 =============================
 
-.. image:: http://img.shields.io/travis/mishbahr/djangocms-usersettings2.svg?style=flat-square
-    :target: https://travis-ci.org/mishbahr/djangocms-usersettings2/
 
 .. image:: http://img.shields.io/pypi/v/djangocms-usersettings2.svg?style=flat-square
     :target: https://pypi.python.org/pypi/djangocms-usersettings2/
