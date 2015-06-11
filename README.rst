@@ -60,3 +60,11 @@ Or you can add ``usersettings.cms_toolbar.UserSettingsToolbar`` to ``CMS_TOOLBAR
        'djangocms_usersettings2.cms_toolbar.UserSettingsToolbar',
     ]
 
+You may also like...
+--------------------
+
+* djangocms-forms — https://github.com/mishbahr/djangocms-forms
+* djangocms-gmaps — https://github.com/mishbahr/djangocms-gmaps
+* djangocms-instagram — https://github.com/mishbahr/djangocms-instagram
+* djangocms-responsive-wrapper — https://github.com/mishbahr/djangocms-responsive-wrapper
+* djangocms-twitter2 — https://github.com/mishbahr/djangocms-twitter2
