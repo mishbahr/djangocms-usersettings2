@@ -8,7 +8,11 @@ except ImportError:
 from cms.toolbar_base import CMSToolbar
 from cms.toolbar_pool import toolbar_pool
 from cms.toolbar.items import Break
-from cms.cms_toolbar import ADMIN_MENU_IDENTIFIER, USER_SETTINGS_BREAK
+
+try:
+    from cms.cms_toolbars import ADMIN_MENU_IDENTIFIER, USER_SETTINGS_BREAK
+except ImportError:
+    from cms.cms_toolbar import ADMIN_MENU_IDENTIFIER, USER_SETTINGS_BREAK
 
 from usersettings.shortcuts import get_usersettings_model
 
@@ -20,6 +24,11 @@ class UserSettingsToolbar(CMSToolbar):
         super(UserSettingsToolbar, self).__init__(*args, **kwargs)
         self.model = get_usersettings_model()
         self.opts = self.model._meta
+
+        try:
+            self.model_name = self.opts.model_name
+        except AttributeError:
+            self.model_name = self.opts.module_name
 
     def populate(self):
         admin_menu = self.toolbar.get_or_create_menu(
@@ -37,13 +46,13 @@ class UserSettingsToolbar(CMSToolbar):
                 url = '%s?%s' % (
                     reverse(
                         'admin:%s_%s_change' % (
-                            self.opts.app_label, self.opts.module_name),
+                            self.opts.app_label, self.model_name),
                         args=(usersettings_obj.pk,)), IS_POPUP_VAR)
             else:
                 url = '%s?site_id=%s&%s' % (
                     reverse('admin:%s_%s_add' % (
                             self.opts.app_label,
-                            self.opts.module_name)),
+                            self.model_name)),
                     self.current_site.pk,
                     IS_POPUP_VAR)
         except NoReverseMatch:
